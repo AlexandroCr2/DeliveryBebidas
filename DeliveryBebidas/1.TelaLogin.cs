@@ -26,9 +26,9 @@ namespace DeliveryBebidas
             //após clicar no botão 1 o sistema compara "se" os conteúdos das textBox1 e textBox2
             //são iguais os predefinidos
             //caso sim, exibe uma mensagem, fechha a aplicação Form1 e abre a aplicação Form2
-            if (textBox1.Text == "ale" && textBox2.Text == "12345")
+            if (textBox1.Text == "Admin" && textBox2.Text == "12345")
             {
-                MessageBox.Show("Login efetuado com sucesso");
+                MessageBox.Show("Login realizado com sucesso!");
                 this.Close();
                 nt = new Thread(novoForm);
                 nt.SetApartmentState(ApartmentState.STA);
@@ -57,6 +57,16 @@ namespace DeliveryBebidas
         {
             // caso o usuário cancele o login através do botão cancelar o sistema é fechado
             this.Close();
+        }
+
+        private void TelaLogin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

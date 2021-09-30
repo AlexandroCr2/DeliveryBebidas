@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace DeliveryBebidas
 {
-    public partial class Form5 : Form
+    public partial class PedidoFinalizadoNovo : Form
     {
-        public Form5()
+        public PedidoFinalizadoNovo()
         {
             InitializeComponent();
         }

@@ -33,7 +33,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Design, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework.Fonts, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
+      <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.26.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Documents\Visual Studio 2019\Templates\ProjectTemplates\conexao_bd\conector\MySql.Data.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -71,12 +83,9 @@
     <Compile Include="4.PedidoFinalizado.Designer.cs">
       <DependentUpon>4.PedidoFinalizado.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
+    <Compile Include="Code.cs" />
+    <Compile Include="Dim.cs" />
+    <Compile Include="For.cs" />
     <Compile Include="5.CadastroMercadoria.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +98,13 @@
     <Compile Include="6.RelatorioPedido.Designer.cs">
       <DependentUpon>6.RelatorioPedido.cs</DependentUpon>
     </Compile>
+    <Compile Include="PedidoFinalizadoNovo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PedidoFinalizadoNovo.Designer.cs">
+      <DependentUpon>PedidoFinalizadoNovo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Private.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="1.TelaLogin.resx">
@@ -109,8 +125,8 @@
     <EmbeddedResource Include="6.RelatorioPedido.resx">
       <DependentUpon>6.RelatorioPedido.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="PedidoFinalizadoNovo.resx">
+      <DependentUpon>PedidoFinalizadoNovo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -121,6 +137,7 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

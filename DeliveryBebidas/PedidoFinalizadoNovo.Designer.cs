@@ -1,7 +1,7 @@
 ﻿
 namespace DeliveryBebidas
 {
-    partial class Form5
+    partial class PedidoFinalizadoNovo
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,10 @@ namespace DeliveryBebidas
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Form5
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Form5";
-            this.Text = "Form5";
-            this.ResumeLayout(false);
-
+            this.Text = "PedidoFinalizadoNovo";
         }
 
         #endregion

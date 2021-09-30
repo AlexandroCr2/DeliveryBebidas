@@ -43,6 +43,7 @@ namespace DeliveryBebidas
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(213, 20);
             this.textBox1.TabIndex = 0;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // textBox2
             // 
@@ -91,7 +92,7 @@ namespace DeliveryBebidas
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // Form1
+            // TelaLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -102,8 +103,10 @@ namespace DeliveryBebidas
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox1);
-            this.Name = "Form1";
+            this.Name = "TelaLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login no sistema";
+            this.Load += new System.EventHandler(this.TelaLogin_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

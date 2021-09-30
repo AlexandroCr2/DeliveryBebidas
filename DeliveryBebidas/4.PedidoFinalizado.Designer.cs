@@ -29,28 +29,23 @@ namespace DeliveryBebidas
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbNomeCliente = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbValorPedido = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbPagamento = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.tbNumPedido = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.tbbDataPedido = new System.Windows.Forms.MaskedTextBox();
+            this.tbTelCliente = new System.Windows.Forms.MaskedTextBox();
+            this.rtbItens = new System.Windows.Forms.RichTextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.rtbEndCliente = new System.Windows.Forms.RichTextBox();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(80, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Pedido Número";
             // 
             // label2
             // 
@@ -61,68 +56,39 @@ namespace DeliveryBebidas
             this.label2.TabIndex = 1;
             this.label2.Text = "Itens do Pedido";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(99, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(120, 20);
-            this.textBox1.TabIndex = 2;
-            // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(99, 45);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(156, 95);
-            this.listBox1.TabIndex = 3;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(24, 225);
+            this.label3.Location = new System.Drawing.Point(9, 257);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 13);
             this.label3.TabIndex = 4;
             this.label3.Text = "Nome do Cliente";
             // 
-            // textBox2
+            // tbNomeCliente
             // 
-            this.textBox2.Location = new System.Drawing.Point(12, 241);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(243, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(24, 274);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 13);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "Endereço do Cliente";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(12, 290);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(243, 20);
-            this.textBox3.TabIndex = 7;
+            this.tbNomeCliente.Enabled = false;
+            this.tbNomeCliente.Location = new System.Drawing.Point(12, 273);
+            this.tbNomeCliente.Name = "tbNomeCliente";
+            this.tbNomeCliente.Size = new System.Drawing.Size(247, 20);
+            this.tbNomeCliente.TabIndex = 5;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(11, 157);
+            this.label5.Location = new System.Drawing.Point(9, 157);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(82, 13);
             this.label5.TabIndex = 8;
             this.label5.Text = "Valor do Pedido";
             // 
-            // textBox4
+            // tbValorPedido
             // 
-            this.textBox4.Location = new System.Drawing.Point(99, 154);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(156, 20);
-            this.textBox4.TabIndex = 9;
+            this.tbValorPedido.Enabled = false;
+            this.tbValorPedido.Location = new System.Drawing.Point(96, 154);
+            this.tbValorPedido.Name = "tbValorPedido";
+            this.tbValorPedido.Size = new System.Drawing.Size(160, 20);
+            this.tbValorPedido.TabIndex = 9;
             // 
             // label6
             // 
@@ -133,31 +99,118 @@ namespace DeliveryBebidas
             this.label6.TabIndex = 10;
             this.label6.Text = "Forma de Pagamento";
             // 
-            // textBox5
+            // tbPagamento
             // 
-            this.textBox5.Location = new System.Drawing.Point(123, 189);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(132, 20);
-            this.textBox5.TabIndex = 11;
+            this.tbPagamento.Enabled = false;
+            this.tbPagamento.Location = new System.Drawing.Point(123, 189);
+            this.tbPagamento.Name = "tbPagamento";
+            this.tbPagamento.Size = new System.Drawing.Size(136, 20);
+            this.tbPagamento.TabIndex = 11;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(9, 301);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(99, 13);
+            this.label7.TabIndex = 13;
+            this.label7.Text = "Telefone do Cliente";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pedido Número";
+            // 
+            // tbNumPedido
+            // 
+            this.tbNumPedido.Enabled = false;
+            this.tbNumPedido.Location = new System.Drawing.Point(99, 10);
+            this.tbNumPedido.Name = "tbNumPedido";
+            this.tbNumPedido.Size = new System.Drawing.Size(120, 20);
+            this.tbNumPedido.TabIndex = 2;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 225);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(81, 13);
+            this.label8.TabIndex = 15;
+            this.label8.Text = "Data do Pedido";
+            // 
+            // tbbDataPedido
+            // 
+            this.tbbDataPedido.Enabled = false;
+            this.tbbDataPedido.Location = new System.Drawing.Point(96, 222);
+            this.tbbDataPedido.Mask = "00/00/0000";
+            this.tbbDataPedido.Name = "tbbDataPedido";
+            this.tbbDataPedido.Size = new System.Drawing.Size(74, 20);
+            this.tbbDataPedido.TabIndex = 16;
+            this.tbbDataPedido.ValidatingType = typeof(System.DateTime);
+            // 
+            // tbTelCliente
+            // 
+            this.tbTelCliente.Enabled = false;
+            this.tbTelCliente.Location = new System.Drawing.Point(114, 298);
+            this.tbTelCliente.Mask = "(99) 0 0000-0000";
+            this.tbTelCliente.Name = "tbTelCliente";
+            this.tbTelCliente.Size = new System.Drawing.Size(113, 20);
+            this.tbTelCliente.TabIndex = 17;
+            // 
+            // rtbItens
+            // 
+            this.rtbItens.Enabled = false;
+            this.rtbItens.Location = new System.Drawing.Point(12, 61);
+            this.rtbItens.Name = "rtbItens";
+            this.rtbItens.Size = new System.Drawing.Size(247, 87);
+            this.rtbItens.TabIndex = 18;
+            this.rtbItens.Text = "";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(9, 331);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 13);
+            this.label4.TabIndex = 6;
+            this.label4.Text = "Endereço do Cliente";
+            // 
+            // rtbEndCliente
+            // 
+            this.rtbEndCliente.Enabled = false;
+            this.rtbEndCliente.Location = new System.Drawing.Point(12, 348);
+            this.rtbEndCliente.Name = "rtbEndCliente";
+            this.rtbEndCliente.Size = new System.Drawing.Size(247, 36);
+            this.rtbEndCliente.TabIndex = 19;
+            this.rtbEndCliente.Text = "";
             // 
             // Form4
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(271, 332);
-            this.Controls.Add(this.textBox5);
+            this.ClientSize = new System.Drawing.Size(271, 396);
+            this.Controls.Add(this.rtbEndCliente);
+            this.Controls.Add(this.rtbItens);
+            this.Controls.Add(this.tbTelCliente);
+            this.Controls.Add(this.tbbDataPedido);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tbPagamento);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.tbValorPedido);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox3);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.tbNomeCliente);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbNumPedido);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "Form4";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido Finalizado";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.ResumeLayout(false);
@@ -166,18 +219,21 @@ namespace DeliveryBebidas
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.ListBox listBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbNomeCliente;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbValorPedido;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbPagamento;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox tbNumPedido;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.MaskedTextBox tbbDataPedido;
+        private System.Windows.Forms.MaskedTextBox tbTelCliente;
+        private System.Windows.Forms.RichTextBox rtbItens;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.RichTextBox rtbEndCliente;
     }
 }
